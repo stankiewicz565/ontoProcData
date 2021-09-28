@@ -1,6 +1,6 @@
 Package: ontoProcData
-Title: 
-Version: 0.0.0.9000
+Title: A data package for ontoProc.
+Version: 0.0.0.9001
 Authors@R:
     person(given = "Sara",
            family = "Stankiewicz",
