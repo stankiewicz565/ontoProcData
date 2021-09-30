@@ -1,13 +1,13 @@
 Package: ontoProcData
-Title: A data package for ontoProc.
-Version: 0.0.0.9001
+Title: A data package for ontoProc
+Version: 0.0.0.9002
 Authors@R:
     person(given = "Sara",
            family = "Stankiewicz",
            role = c("aut", "cre"),
            email = "Sara.Stankiewicz@channing.harvard.edu",
            comment = c(ORCID = "0000-0002-8967-0224"))
-Description: What the package does (one paragraph).
+Description: This pacakge manages rda files of multiple ontologies that are used in the ontoProc package. These ontologies were originally downloaded as owl or obo files and converted into Rda files . The file were downloaded at various times but most of them were downloaded on June 22 2021. 
 License: Artistic-2.0
 Encoding: UTF-8
 LazyData: true
@@ -15,5 +15,5 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Suggests:
     testthat (>= 3.0.0)
-Config/testthat/edition: 3
+Config/testthat/edition: 3, AnnotationHub
 biocViews: AnnotationData, AnnotationHub
