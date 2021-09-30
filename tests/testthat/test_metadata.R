@@ -1,4 +1,4 @@
-context("metadata validity")
+#context("metadata validity")
 
 #test_that("metadata is valid",
 #{
