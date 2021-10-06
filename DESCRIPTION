@@ -1,13 +1,13 @@
 Package: ontoProcData
 Title: A data package for ontoProc
-Version: 0.99.0
+Version: 0.99.1
 Authors@R:
     person(given = "Sara",
            family = "Stankiewicz",
            role = c("aut", "cre"),
            email = "Sara.Stankiewicz@channing.harvard.edu",
            comment = c(ORCID = "0000-0002-8967-0224"))
-Description: This pacakge manages rda files of multiple ontologies that are used in the ontoProc package. These ontologies were originally downloaded as owl or obo files and converted into Rda files . The file were downloaded at various times but most of them were downloaded on June 22 2021. 
+Description: This package manages rda files of multiple ontologies that are used in the ontoProc package. These ontologies were originally downloaded as owl or obo files and converted into Rda files . The files were downloaded at various times but most of them were downloaded on June 22 2021.
 License: Artistic-2.0
 Encoding: UTF-8
 LazyData: true
