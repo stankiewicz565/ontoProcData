@@ -5,5 +5,5 @@
 #' @name ontoProcData-package
 #' @aliases ontoProcData-package ontoProcData
 #' @docType package
-#' @author Sara Stankiewicz
+
 NULL

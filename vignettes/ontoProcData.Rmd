@@ -4,7 +4,7 @@ author: "Sara Stankiewicz, Sara.Stankiewicz@channing.harvard.edu"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 vignette: >
   %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteIndexEntry{ontoProcData:  Data Storage for the package ontoProc}
+  %\VignetteIndexEntry{ontoProcData:Data Storage for the package ontoProc}
   %\VignetteEncoding{UTF-8}
 output:
   BiocStyle::html_document:
@@ -13,6 +13,8 @@ output:
     theme: united
     toc: yes
 ---
+This package defines an AnnotationHub resource
+representing multiple ontologies. 
 
 ```{r get-data}
 library(AnnotationHub)
@@ -21,5 +23,4 @@ mymeta <- query(ahub , "ontoProcData")
 mymeta
 tag = names(mymeta)[1] 
 tag
-head(ahub[[tag]][,1:6])
 ```
