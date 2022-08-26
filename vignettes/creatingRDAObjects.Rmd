@@ -1,0 +1,44 @@
+---
+title: "Creating RDA objects"
+author: "Sara Stankiewicz, Sara.Stankiewicz@channing.harvard.edu"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+vignette: >
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteIndexEntry{ontoProcData:Data Storage for the package ontoProc}
+  %\VignetteEncoding{UTF-8}
+output:
+  BiocStyle::html_document:
+    highlight: pygments
+    number_sections: yes
+    theme: united
+    toc: yes
+---
+
+
+Below are the instruction on how all the ontologies were transformed into RDA's. If the ontology is in owl format it will need to be converted into an obo file. To do this download robot. Below is the link to the github repo that contains the robot tool. It is a tool for terminal so the following code must be run on the terminal. 
+https://github.com/ontodev/robot
+
+Below is the link to the documentation for how to run robot.
+
+http://robot.obolibrary.org/convert
+
+```{r, eval=FALSE}
+robot reason --input [filename].owl convert --check false --output [filename].obo
+```
+
+
+For ontologies already in the obo format skip the first step and start here. Fill in all the [] with the appropriate directories / file names. For RDA the variable the [rdaName] is the nave of the file when loading into R .
+
+
+```{r, eval=FALSE}
+directory = [directoryOfOboFiles]
+rdaDirectory = [directoryForRDAFiles]
+datafileName = [fileName].obo
+rdaName = [rdaName].rda
+datafile = paste0(directory,datafileName)
+savefile = paste0(rdaDirectory, rdaName)
+[rdaName] = get_OBO(datafile,  extract_tags = "everything")
+
+save([rdaName], file = savefile, compress = "xz")
+```
+
