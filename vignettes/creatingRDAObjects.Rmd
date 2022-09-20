@@ -4,7 +4,7 @@ author: "Sara Stankiewicz, Sara.Stankiewicz@channing.harvard.edu"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 vignette: >
   %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteIndexEntry{ontoProcData:Data Storage for the package ontoProc}
+  %\VignetteIndexEntry{Creating RDA objects}
   %\VignetteEncoding{UTF-8}
 output:
   BiocStyle::html_document:
@@ -41,4 +41,11 @@ savefile = paste0(rdaDirectory, rdaName)
 
 save([rdaName], file = savefile, compress = "xz")
 ```
+
+
+Session info
+```{r}
+sessionInfo()
+```
+
 
