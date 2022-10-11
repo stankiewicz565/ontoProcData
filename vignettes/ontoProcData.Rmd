@@ -24,3 +24,10 @@ mymeta
 tag = names(mymeta)[1] 
 tag
 ```
+
+Session information
+```{r}
+sessionInfo()
+
+```
+
